@@ -1,0 +1,102 @@
+﻿@model Book.BL.ReadingEvent
+@using Book.BL;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Book.DAL.Entities.ApplicationUser> SignInManager
+@inject UserManager<Book.DAL.Entities.ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Reading Event</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StartTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StartTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OtherDetails)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OtherDetails)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Invites)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Invites)
+        </dd>
+        <dt class="col-sm-2">
+            Total invited to event
+        </dt>
+        @if (Model.Invites != null)
+        {
+            var count = Model.Invites.Split(',').Length;
+            <dd class="col-sm-2">
+                @count
+            </dd>
+        }
+    </dl>
+</div>
+@if (SignInManager.IsSignedIn(User))
+{
+    await Html.RenderPartialAsync("_comment", new CommentModel() { EventId = Model.Id });
+}
+<div>
+    <h3>Comments</h3>
+    <table class="table">
+        <tbody>
+            @foreach (var product in ViewBag.Cmnt)
+            {
+                <tr>
+                    <td>@product.Comment</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,13 @@
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.csproj.AssemblyReference.cache
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.AssemblyInfoInputs.cache
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.AssemblyInfo.cs
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.csproj.CoreCompileInputs.cache
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\bin\Debug\netcoreapp3.1\Book.BL.deps.json
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\bin\Debug\netcoreapp3.1\Book.BL.dll
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\bin\Debug\netcoreapp3.1\Book.BL.pdb
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.dll
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.pdb
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\bin\Debug\netcoreapp3.1\Book.DAL.dll
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\bin\Debug\netcoreapp3.1\Book.DAL.pdb
+C:\Users\utkarshbishnoi\Desktop\MVC Assignment\3Layer\MVCAssignment\Book.BL\obj\Debug\netcoreapp3.1\Book.BL.csproj.CopyComplete
