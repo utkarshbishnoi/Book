@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Book.BL.ReadingEvent>
+<h1>Events Invited To</h1>
+<div>
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li>@Html.ActionLink(item.Title, "Details", new { @id = item.Id })</li>
+        }
+    </ul>
+</div>
